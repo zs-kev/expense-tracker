@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+	
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	
+	<script src="assets/js/addExpense.js" charset="utf-8"></script>
+	<script src="assets/js/app.js" charset="utf-8"></script>
+</head>
+<body>
+	<main>
+		<header>
+			<h1>Expense Tracker</h1>
+			<p>The Super Simple Expense Tracker</p>
+		</header>
+		<section>
+			<h2>Add A New Item:</h2>
+			<div>
+				<label for="name">Name</label>
+				<input type="text" name="name" placeholder="Name of Expense…" id="expenseName" />
+				<label for="date">Date</label>
+				<input type="date" name="date" id="expenseDate" />
+				<label for="amount">Amount</label>
+				<input type="number" name="amount" id="expenseAmount" />
+			</div>
+			<button type="submit" class="expenseSubmit">Add Expense</button>
+		</section>
+		<section>
+			<table>
+			  <thead>
+			    <tr>
+			      <th>Name</th>
+			      <th>Date</th>
+			      <th>Amount</th>
+			    </tr>
+			   </thead>
+			   <tbody>
+			     <tr>
+			       <td>expense 1</td>
+			       <td>12/08/2020</td>
+			       <td>R120.00</td>
+			     </tr>
+			     <tr>
+			       <td>expense 2</td>
+			       <td>18/09/2020</td>
+			       <td>R1120.20</td>
+			     </tr>
+			     <tr>
+			       <td>expense 3</td>
+			       <td>25/09/2020</td>
+			       <td>R11120.90</td>
+			     </tr>
+			     <tr>
+			     </tr>
+			  </tbody>
+			</table>
+		</section>
+	</main>
+</body>
+</html>
