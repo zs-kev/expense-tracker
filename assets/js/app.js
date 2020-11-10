@@ -1,5 +1,6 @@
-const expenseSubmit = document.getElementsByClassName('expenseSubmit');
+const EXPENSE_SUBMIT = document.querySelector('#expenseSubmit');
+const EXPENSE_NAME = document.querySelector('#expenseName');
+const EXPENSE_DATE = document.querySelector('#expenseDate');
+const EXPENSE_AMOUNT = document.querySelector('#expenseAmount');
 
-console.log(expenseSubmit);
-
-expenseSubmit.addEventListener('click', addExpense);
+EXPENSE_SUBMIT.addEventListener('click', checkInputHandler);
