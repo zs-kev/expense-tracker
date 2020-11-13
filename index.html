@@ -7,8 +7,9 @@
 	
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 	
-	<script src="assets/js/addExpense.js" charset="utf-8"></script>
-	<script src="assets/js/app.js" charset="utf-8"></script>
+	<script src="assets/js/addExpense.js" charset="utf-8" defer></script>
+	<script src="assets/js/checkInput.js" charset="utf-8" defer></script>
+	<script src="assets/js/app.js" charset="utf-8" defer></script>
 </head>
 <body>
 	<main>
@@ -26,7 +27,7 @@
 				<label for="amount">Amount</label>
 				<input type="number" name="amount" id="expenseAmount" />
 			</div>
-			<button type="submit" class="expenseSubmit">Add Expense</button>
+			<button type="submit" id="expenseSubmit">Add Expense</button>
 		</section>
 		<section>
 			<table>
@@ -37,7 +38,7 @@
 			      <th>Amount</th>
 			    </tr>
 			   </thead>
-			   <tbody>
+			   <tbody class="table-body">
 			     <tr>
 			       <td>expense 1</td>
 			       <td>12/08/2020</td>
